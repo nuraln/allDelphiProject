@@ -1,0 +1,180 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Shape1: TShape;
+    Timer1: TTimer;
+    Shape2: TShape;
+    Shape3: TShape;
+    procedure Timer1Timer(Sender: TObject);
+    procedure formcreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  a, b, c, d, e, f : integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.formcreate(Sender: TObject);
+begin
+  a := 2;
+  b := 2;
+  c := 2;
+  d := 2;
+  e := 2;
+  f := 2;
+end;
+
+procedure TForm1.Timer1Timer(Sender: TObject);
+begin
+  // SHAPE1
+  shape1.left := shape1.left +a;
+  shape1.top := shape1.top +b;
+
+  if ((shape1.left <= 0) or (shape1.left >= 990)) then
+  begin
+    a := -a;
+    Shape1.Brush.Color := RGB(random (255), random (255), random (255));
+    Form1.Brush.Color := RGB(random (255), random (255), random (255));
+  end;
+  if ((shape1.top <= 0) or (shape1.top >= 565)) then
+  begin
+    b := -b;
+    Shape1.Brush.Color := RGB(random (255), random (255), random (255));
+    Form1.Brush.Color := RGB(random (255), random (255), random (255));
+  end;
+
+    // SHAPE2
+  shape2.left := shape2.left +c;
+  shape2.top := shape2.top +d;
+
+  if ((shape2.left <= 0) or (shape2.left >= 990)) then
+  begin
+    c := -c;
+    Shape2.Brush.Color := RGB(random (255), random (255), random (255));
+    Form1.Brush.Color := RGB(random (255), random (255), random (255));
+  end;
+  if ((shape2.top <= 0) or (shape2.top >= 565)) then
+  begin
+    d := -d;
+    Shape2.Brush.Color := RGB(random (255), random (255), random (255));
+    Form1.Brush.Color := RGB(random (255), random (255), random (255));
+  end;
+
+  // SHAPE3
+  shape3.left := shape3.left +e;
+  shape3.top := shape3.top +f;
+
+  if ((shape3.left <= 0) or (shape3.left >= 990)) then
+  begin
+    e := -e;
+    Shape3.Brush.Color := RGB(random (255), random (255), random (255));
+    Form1.Brush.Color := RGB(random (255), random (255), random (255));
+  end;
+  if ((shape3.top <= 0) or (shape3.top >= 565)) then
+  begin
+    f := -f;
+    Shape3.Brush.Color := RGB(random (255), random (255), random (255));
+    Form1.Brush.Color := RGB(random (255), random (255), random (255));
+  end;
+
+
+  // BOLA 1 DAN 2 BERTABRAKAN
+    if (abs(shape1.left-shape2.left) <= shape1.width) and (abs(shape1.top-shape2.top) <= shape1.height)  then
+    begin
+      if (shape2.left > shape1.left) then
+      begin
+        c := 2;
+        a:= -2;
+      end;
+
+      if (shape2.left < shape1.left) then
+      begin
+        c := 2;
+        a:= -2;
+      end;
+
+      if (shape2.top > shape1.top) then
+      begin
+        c := 2;
+        d := -2;
+      end;
+
+      if (shape2.top < shape1.top) then
+      begin
+        c := 2;
+        d := -2;
+      end;
+    end;
+
+  //  BOLA 1 DAN 3 BERTABRAKAN
+    if (abs(shape1.left-shape3.left) <= shape1.width) and (abs(shape1.top-shape3.top) <= shape1.height)  then
+    begin
+      if (shape3.left > shape1.left) then
+      begin
+        e := 2;
+        a:= -2;
+      end;
+
+      if (shape3.left < shape1.left) then
+      begin
+        e := 2;
+        a:= -2;
+      end;
+
+      if (shape3.top > shape1.top) then
+      begin
+        e := 2;
+        f := -2;
+      end;
+
+      if (shape3.top < shape1.top) then
+      begin
+        e := 2;
+        f := -2;
+      end;
+    end;
+
+  //  BOLA 2 DAN 3 BERTABRAKAN
+    if (abs(shape2.left-shape3.left) <= shape2.width) and (abs(shape2.top-shape3.top) <= shape2.height)  then
+    begin
+      if (shape3.left > shape2.left) then
+      begin
+        e := 2;
+        c := -2;
+      end;
+
+      if (shape3.left < shape2.left) then
+      begin
+        e := 2;
+        c := -2;
+      end;
+
+      if (shape3.top > shape2.top) then
+      begin
+        e := 2;
+        f := -2;
+      end;
+
+      if (shape3.top < shape2.top) then
+      begin
+        e := 2;
+        f := -2;
+      end;
+    end;
+end;
+
+end.

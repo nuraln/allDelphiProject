@@ -1,0 +1,105 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Timer1: TTimer;
+    procedure Button3Click(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  hour1, hour2, hour3, min1, min2, sec1, sec2, mili : integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  label1.Text :=  '00';
+  label3.Text :=  '00';
+  label1.Text :=  '00';
+  label1.Text :=  '00';
+  label1.Text :=  '00';
+  label1.Text :=  '00';
+  label1.Text :=  '00';
+  label1.Text :=  '00';
+
+end;
+
+procedure TForm1.Timer1Timer(Sender: TObject);
+begin
+  mili := mili + 1;
+  if mili>99 then
+  begin
+    mili := 0;
+    sec2 := sec2 + 1;
+  end;
+
+  if sec2>9 then
+  begin
+    sec2 := 0;
+    sec1 := sec1 + 1;
+  end;
+
+  if sec1>5 then
+  begin
+    sec1 := 0;
+    min2 := min2 + 1;
+  end;
+
+  if min2 > 9 then
+  begin
+    min2 := 0;
+    min1 := -min1 + 1;
+  end;
+
+  if min1 > 5 then
+  begin
+    min1 := 0;
+    hour3 := hour3 + 1;
+  end;
+
+  if hour3 > 9 then
+  begin
+    hour3 := 0;
+    hour2 := hour2 + 1;
+  end;
+
+  if hour2 > 9 then
+  begin
+    hour2 := 0;
+    hour1 := hour1 + 1;
+  end;
+
+  if hour1 > 9 then
+  begin
+    hour1 := 0;
+  end;
+
+
+end;
+
+
+end.

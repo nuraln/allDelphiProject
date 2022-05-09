@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/09/25 05:56:09.000.130,=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/02 11:13:23.000.986,=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/02 11:26:33.000.657,=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/02 12:54:59.000.962,=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/02 12:58:12.000.343,=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/02 14:11:57.000.257,=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/04 07:21:02.000.683,=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/11/16 16:24:34.000.662,=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/11/16 16:31:22.000.089,C:\Array2D_PenjumlahanMatrix\Unit1.dfm=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/11/16 16:31:22.000.089,C:\Array2D_PenjumlahanMatrix\Unit1.pas=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/11/16 16:31:24.000.792,C:\Array2D_PenjumlahanMatrix\Project1.dproj=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

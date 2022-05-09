@@ -1,0 +1,46 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 357
+  ClientWidth = 605
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = formcreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Shape1: TShape
+    Left = 40
+    Top = 48
+    Width = 65
+    Height = 65
+    Brush.Color = clMaroon
+    Shape = stCircle
+  end
+  object Shape2: TShape
+    Left = 136
+    Top = 56
+    Width = 65
+    Height = 65
+    Brush.Color = clMaroon
+    Shape = stCircle
+  end
+  object Shape3: TShape
+    Left = 232
+    Top = 56
+    Width = 65
+    Height = 65
+    Brush.Color = clMaroon
+    Shape = stCircle
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 248
+    Top = 264
+  end
+end

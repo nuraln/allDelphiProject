@@ -1,0 +1,56 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Grids, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    StringGrid1: TStringGrid;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  matrixA : array [1..5,1..5] of integer;
+  matrixB : array [1..5,1..5] of integer;
+
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  stringgrid1.ColWidths[1] := 120;
+  stringgrid1.ColWidths[2] := 120;
+  stringgrid1.ColWidths[3] := 120;
+  stringgrid1.ColWidths[4] := 120;
+  stringgrid1.ColWidths[5] := 120;
+  stringgrid1.ColWidths[6] := 120;
+  stringgrid1.ColWidths[7] := 120;
+  stringgrid1.ColWidths[8] := 120;
+  stringgrid1.ColWidths[9] := 120;
+  stringgrid1.ColWidths[10] := 120;
+  stringgrid1.ColWidths[11] := 120;
+
+
+
+
+
+
+
+
+
+
+
+end;
+
+end.

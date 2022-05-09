@@ -1,0 +1,58 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm2 = class(TForm)
+    ListBox1: TListBox;
+    ListBox2: TListBox;
+    Button1: TButton;
+    ListBox3: TListBox;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.Button1Click(Sender: TObject);
+var i, j : integer;
+star : string;
+begin
+    for i := 10 downto 1 do
+      listbox1.Items.Add('*');
+
+    for i := 1 to 10 do
+       begin
+          star := ' ';
+         for j := 1 to i do
+         begin
+            star := star + '*';
+         end;
+         listbox2.Items.Add(star);
+       end;
+
+    for i := 10 downto 1 do
+       begin
+          star := ' ';
+         for j := 1 to i do
+         begin
+            star := star + '*';
+         end;
+         listbox3.Items.Add(star);
+       end;
+
+end;
+
+end.

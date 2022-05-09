@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/12/25 08:29:20.000.871,=D:\Materi Kuliah\Semester 3\Pemograman Visual\DELPHI NEW\Unit1.pas</Transaction>
+    <Transaction>2021/12/25 08:36:54.000.322,D:\Materi Kuliah\Semester 3\Pemograman Visual\Database\Unit1.dfm=D:\Materi Kuliah\Semester 3\Pemograman Visual\DELPHI NEW\Unit1.dfm</Transaction>
+    <Transaction>2021/12/25 08:36:54.000.322,D:\Materi Kuliah\Semester 3\Pemograman Visual\Database\Unit1.pas=D:\Materi Kuliah\Semester 3\Pemograman Visual\DELPHI NEW\Unit1.pas</Transaction>
+    <Transaction>2021/12/25 08:37:15.000.709,D:\Materi Kuliah\Semester 3\Pemograman Visual\Database\Project1.dproj=D:\Materi Kuliah\Semester 3\Pemograman Visual\DELPHI NEW\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,96 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 272
+  ClientWidth = 454
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 96
+    Top = 91
+    Width = 54
+    Height = 14
+    Caption = 'Username'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Roboto'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 96
+    Top = 136
+    Width = 54
+    Height = 14
+    Caption = 'Password'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Roboto'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 56
+    Top = 32
+    Width = 323
+    Height = 14
+    Caption = 'Untuk Mengakses Halaman Penjualan Silahkan Login'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Rockwell'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 184
+    Top = 88
+    Width = 121
+    Height = 22
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Roboto'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 184
+    Top = 133
+    Width = 121
+    Height = 22
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Roboto'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 200
+    Top = 184
+    Width = 75
+    Height = 25
+    Caption = 'login'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Roboto'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+end

@@ -1,0 +1,234 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 460
+  ClientWidth = 698
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 16
+    Width = 17
+    Height = 13
+    Caption = 'Nim'
+  end
+  object Label2: TLabel
+    Left = 24
+    Top = 48
+    Width = 27
+    Height = 13
+    Caption = 'Nama'
+  end
+  object Label3: TLabel
+    Left = 24
+    Top = 80
+    Width = 36
+    Height = 13
+    Caption = 'Kelamin'
+  end
+  object Label4: TLabel
+    Left = 24
+    Top = 107
+    Width = 33
+    Height = 13
+    Caption = 'Agama'
+  end
+  object Label5: TLabel
+    Left = 24
+    Top = 144
+    Width = 33
+    Height = 13
+    Caption = 'Alamat'
+  end
+  object Label6: TLabel
+    Left = 25
+    Top = 424
+    Width = 56
+    Height = 13
+    Caption = 'Input Nama'
+  end
+  object DBGrid1: TDBGrid
+    Left = 24
+    Top = 241
+    Width = 607
+    Height = 177
+    DataSource = DataSource1
+    ReadOnly = True
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 25
+    Top = 201
+    Width = 252
+    Height = 25
+    DataSource = DataSource1
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbDelete, nbRefresh]
+    TabOrder = 1
+  end
+  object DBEdit1: TDBEdit
+    Left = 128
+    Top = 16
+    Width = 145
+    Height = 21
+    DataField = 'Nim'
+    DataSource = DataSource1
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object DBEdit2: TDBEdit
+    Left = 128
+    Top = 50
+    Width = 145
+    Height = 21
+    DataField = 'Nama'
+    DataSource = DataSource1
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object DBComboBox1: TDBComboBox
+    Left = 128
+    Top = 77
+    Width = 145
+    Height = 21
+    DataField = 'Kelamin'
+    DataSource = DataSource1
+    ReadOnly = True
+    TabOrder = 4
+  end
+  object DBComboBox2: TDBComboBox
+    Left = 128
+    Top = 104
+    Width = 145
+    Height = 21
+    DataField = 'Agama'
+    DataSource = DataSource1
+    ReadOnly = True
+    TabOrder = 5
+  end
+  object DBMemo1: TDBMemo
+    Left = 128
+    Top = 131
+    Width = 497
+    Height = 54
+    DataField = 'Alamat'
+    DataSource = DataSource1
+    ReadOnly = True
+    TabOrder = 6
+  end
+  object Button1: TButton
+    Left = 344
+    Top = 202
+    Width = 75
+    Height = 25
+    Caption = 'Tambah'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Trebuchet MS'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 416
+    Top = 202
+    Width = 75
+    Height = 25
+    Caption = 'Edit'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Trebuchet MS'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 489
+    Top = 202
+    Width = 75
+    Height = 25
+    Caption = 'Simpan'
+    Enabled = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Trebuchet MS'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 9
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 556
+    Top = 202
+    Width = 75
+    Height = 25
+    Caption = 'Batal'
+    Enabled = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Trebuchet MS'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 10
+    OnClick = Button4Click
+  end
+  object Edit1: TEdit
+    Left = 128
+    Top = 424
+    Width = 145
+    Height = 21
+    TabOrder = 11
+  end
+  object Button5: TButton
+    Left = 288
+    Top = 424
+    Width = 75
+    Height = 25
+    Caption = 'Cari'
+    TabOrder = 12
+    OnClick = Button5Click
+  end
+  object Koneksi: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Materi Kuliah\Se' +
+      'mester 3\Pemograman Visual\Database\Database.mdb;Persist Securit' +
+      'y Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 414
+    Top = 368
+  end
+  object DataMahasiswa: TADOTable
+    Active = True
+    Connection = Koneksi
+    CursorType = ctStatic
+    TableName = 'TMahasiswa'
+    Left = 478
+    Top = 368
+  end
+  object DataSource1: TDataSource
+    DataSet = DataMahasiswa
+    Left = 558
+    Top = 368
+  end
+end
